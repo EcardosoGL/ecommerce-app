@@ -3,13 +3,14 @@ import ProductCard from "./ProductCard";
 import { Product } from "../types/types";
 import "./ProductList.css";
 
-const ProductList: React.FC = () => {
+const ProductList: React.FC = () => {  
   const [storedProducts, setStoredProducts] = useState<Product[]>([]);
 
-  useEffect(() => {
-    const storedProducts = JSON.parse(localStorage.getItem("products") ?? "[]");
-    setStoredProducts(storedProducts);
-  }, []);
+  const storedProductsInLocalStorage = JSON.parse(localStorage.getItem("products") ?? "[]");
+
+  useEffect(() => {    
+    setStoredProducts(storedProductsInLocalStorage);
+  }, [storedProductsInLocalStorage]);
 
   return (
     <div className="product-list">

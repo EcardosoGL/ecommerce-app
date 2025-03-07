@@ -66,5 +66,17 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
    ```
 5. Crea un Pull Request en el repositorio original.
 
+## Usuarios de prueba
+### Cliente:
+- **Usuario**:
+  ```cliente
+- **Clave**:
+  ```cliente123
+### Administrador:
+- **Usuario**:
+  ```admin
+- **Clave**:
+  ```admin123
+
 ## Licencia
 Este proyecto está bajo la licencia [MIT](LICENSE).
