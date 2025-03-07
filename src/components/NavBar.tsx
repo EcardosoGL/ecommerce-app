@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useAuthStore from "../stores/authStore";
-import "./Navbar.css";
+import "./NavBar.css";
 import Login from "./Login";
 import useCartStore from "../stores/cartStore";
 
