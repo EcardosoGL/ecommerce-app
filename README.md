@@ -78,5 +78,49 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
 - **Clave**:
   ```admin123
 
+## Pruebas
+
+Para ejecutar las pruebas automatizadas, usa:
+
+bash
+pnpm run test
+
+Las pruebas están implementadas con *Vitest el despliegue se realiza mediante **CI/CD en Azure*. (No se desplegó en AWS por problemas con la cuenta)
+
+Se utilizan herramientas como:
+
+- *GitHub Actions* para ejecutar pruebas y desplegar cambios.
+- *Azure Static Web Apps* para alojar la aplicación.
+
+El despliegue se realiza automáticamente al hacer push a la rama principal.
+
+## Scripts disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+| Comando           | Descripción                                   |
+| ----------------- | --------------------------------------------- |
+| pnpm run dev     | Inicia el entorno de desarrollo               |
+| pnpm run build   | Genera una versión optimizada para producción |
+| pnpm run test    | Ejecuta pruebas automatizadas                 |
+| pnpm run storybook | Inicia Storybook para visualizar componentes |
+| pnpm run lint    | Ejecuta el linter para mantener el código limpio |
+| pnpm run start  | Inicia un servidor de producción localmente   |
+
+
+## Arquitectura del Proyecto
+
+plaintext
+proyecto-ecommerce/
+├── src/
+│   ├── components/  # Componentes reutilizables
+│   ├── store/       # Estado global con Zustand
+│   ├── services/    # Llamadas a APIs
+│   ├── tests/       # Pruebas automatizadas
+│   ├── stories/     # Historias de Storybook
+│   ├── App.tsx      # Componente principal
+│   └── main.tsx     # Punto de entrada de la aplicación
+└── ... (otros archivos de configuración)
+
 ## Licencia
 Este proyecto está bajo la licencia [MIT](LICENSE).
