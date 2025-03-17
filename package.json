@@ -9,6 +9,8 @@
     ]
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build:utils": "pnpm --filter utils-library-ecommerce-app build",
     "dev:ecommerce": "pnpm --filter ecommerce dev",
     "start:ecommerce": "pnpm --filter ecommerce start",
     "build:ecommerce": "pnpm --filter ecommerce build",
