@@ -126,9 +126,9 @@ ecommerce-app/
 │   ├── src/
 │   │   ├── index.ts   # Punto de entrada de la biblioteca
 │   │   ├── ...        # Otros archivos de configuración
+```
 
-
-## 🔗 Deploy en Azure  
+## 🔗 Deploy en Azure
 [🌍 Url del proyecto](https://zealous-forest-0aa8a0710.6.azurestaticapps.net/)
 
 ## Licencia
