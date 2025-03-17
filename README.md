@@ -109,22 +109,24 @@ En el directorio del proyecto, puedes ejecutar:
 
 ## Arquitectura del Proyecto
 
-plaintext
+```plaintext
 ecommerce-app/
-├── apps/ecommerce/ # Código fuente del proyecto
-   ├── src/
-   │   ├── components/  # Componentes reutilizables
-   │   ├── store/       # Estado global con Zustand
-   │   ├── services/    # Llamadas a APIs
-   │   ├── tests/       # Pruebas automatizadas
-   │   ├── stories/     # Historias de Storybook
-   │   ├── App.tsx      # Componente principal
-   │   └── main.tsx     # Punto de entrada de la aplicación
-   └── ... (otros archivos de configuración)
-├── packages/utils-library-ecommerce-app/ # Biblioteca de utilidades
-   ├── src/
-   │   ├── index.ts     # Punto de entrada de la biblioteca
-   └── ... (otros archivos de configuración)
+├── apps/ecommerce/    # Código fuente del proyecto
+│   ├── src/
+│   │   ├── components/  # Componentes reutilizables
+│   │   ├── store/       # Estado global con Zustand
+│   │   ├── services/    # Llamadas a APIs
+│   │   ├── tests/       # Pruebas automatizadas
+│   │   ├── stories/     # Historias de Storybook
+│   │   ├── App.tsx      # Componente principal
+│   │   ├── main.tsx     # Punto de entrada de la aplicación
+│   │   ├── ...          # Otros archivos de configuración
+│
+├── packages/utils-library-ecommerce-app/  # Biblioteca de utilidades
+│   ├── src/
+│   │   ├── index.ts   # Punto de entrada de la biblioteca
+│   │   ├── ...        # Otros archivos de configuración
+
 
 ## Licencia
 Este proyecto está bajo la licencia [MIT](LICENSE).
