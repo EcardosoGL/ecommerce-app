@@ -98,15 +98,14 @@ El despliegue se realiza automáticamente al hacer push a la rama principal.
 
 En el directorio del proyecto, puedes ejecutar:
 
-| Comando                      | Descripción                                      |
-| ------------------------- ---| ------------------------------------------------ |
-| pnpm run dev:ecommerce       | Inicia el entorno de desarrollo                  |
-| pnpm run build:ecommerce     | Genera una versión optimizada para producción    |
-| pnpm run test:ecommerce      | Ejecuta pruebas automatizadas                    |
-| pnpm run storybook:ecommerce | Inicia Storybook para visualizar componentes     |
-| pnpm run lint:ecommerce      | Ejecuta el linter para mantener el código limpio |
-| pnpm run start:ecommerce     | Inicia un servidor de producción localmente      |
-
+| Comando           | Descripción                                   |
+| ----------------- | --------------------------------------------- |
+| npm run dev:ecommerce | Inicia el entorno de desarrollo               |
+| npm run build:ecommerce | Genera una versión optimizada para producción |
+| npm run test:ecommerce | Ejecuta pruebas automatizadas                 |
+| npm run storybook:ecommerce | Inicia Storybook para visualizar componentes |
+| npm run lint:ecommerce | Ejecuta el linter para mantener el código limpio |
+| npm run start:ecommerce | Inicia un servidor de producción localmente  |
 
 ## Arquitectura del Proyecto
 
