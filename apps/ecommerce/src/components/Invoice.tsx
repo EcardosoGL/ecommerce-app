@@ -1,7 +1,7 @@
 import React from "react";
 import "./Invoice.css";
 import { Product, InvoiceProps } from "../types/types";
-import { formatDate, formatTotal } from "../utils/format";
+import { formatDate, formatTotal } from "utils-library-ecommerce-app";
 
 const Invoice: React.FC<InvoiceProps> = ({ items, userData, date }) => {
   const total = items.reduce((sum:number, item:Product) => sum + item.price, 0);

@@ -13,7 +13,7 @@ ECommerce App es una aplicación web desarrollada con React, Vite y TypeScript, 
 ## Instalación y ejecución
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/EcardosoGL/ecommerce-app
+   git clone https://github.com/tu-usuario/ecommerce-app.git
    ```
 2. Ingresa al directorio del proyecto:
    ```sh
@@ -25,7 +25,7 @@ ECommerce App es una aplicación web desarrollada con React, Vite y TypeScript, 
    ```
 4. Inicia el servidor de desarrollo:
    ```sh
-   pnpm run dev:ecommerce
+   pnpm run dev
    ```
 5. Accede a la aplicación en tu navegador en:
    ```
@@ -83,7 +83,7 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
 Para ejecutar las pruebas automatizadas, usa:
 
 bash
-pnpm run test:ecommerce
+pnpm run test
 
 Las pruebas están implementadas con *Vitest el despliegue se realiza mediante **CI/CD en Azure*. (No se desplegó en AWS por problemas con la cuenta)
 
@@ -98,34 +98,29 @@ El despliegue se realiza automáticamente al hacer push a la rama principal.
 
 En el directorio del proyecto, puedes ejecutar:
 
-| Comando                      | Descripción                                      |
-| ------------------------- ---| ------------------------------------------------ |
-| pnpm run dev:ecommerce       | Inicia el entorno de desarrollo                  |
-| pnpm run build:ecommerce     | Genera una versión optimizada para producción    |
-| pnpm run test:ecommerce      | Ejecuta pruebas automatizadas                    |
-| pnpm run storybook:ecommerce | Inicia Storybook para visualizar componentes     |
-| pnpm run lint:ecommerce      | Ejecuta el linter para mantener el código limpio |
-| pnpm run start:ecommerce     | Inicia un servidor de producción localmente      |
+| Comando           | Descripción                                   |
+| ----------------- | --------------------------------------------- |
+| pnpm run dev     | Inicia el entorno de desarrollo               |
+| pnpm run build   | Genera una versión optimizada para producción |
+| pnpm run test    | Ejecuta pruebas automatizadas                 |
+| pnpm run storybook | Inicia Storybook para visualizar componentes |
+| pnpm run lint    | Ejecuta el linter para mantener el código limpio |
+| pnpm run start  | Inicia un servidor de producción localmente   |
 
 
 ## Arquitectura del Proyecto
 
 plaintext
-ecommerce-app/
-├── apps/ecommerce/ # Código fuente del proyecto
-   ├── src/
-   │   ├── components/  # Componentes reutilizables
-   │   ├── store/       # Estado global con Zustand
-   │   ├── services/    # Llamadas a APIs
-   │   ├── tests/       # Pruebas automatizadas
-   │   ├── stories/     # Historias de Storybook
-   │   ├── App.tsx      # Componente principal
-   │   └── main.tsx     # Punto de entrada de la aplicación
-   └── ... (otros archivos de configuración)
-├── packages/utils-library-ecommerce-app/ # Biblioteca de utilidades
-   ├── src/
-   │   ├── index.ts     # Punto de entrada de la biblioteca
-   └── ... (otros archivos de configuración)
+proyecto-ecommerce/
+├── src/
+│   ├── components/  # Componentes reutilizables
+│   ├── store/       # Estado global con Zustand
+│   ├── services/    # Llamadas a APIs
+│   ├── tests/       # Pruebas automatizadas
+│   ├── stories/     # Historias de Storybook
+│   ├── App.tsx      # Componente principal
+│   └── main.tsx     # Punto de entrada de la aplicación
+└── ... (otros archivos de configuración)
 
 ## Licencia
 Este proyecto está bajo la licencia [MIT](LICENSE).

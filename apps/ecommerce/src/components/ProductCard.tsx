@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Product } from "../types/types";
 import useCartStore from "../stores/cartStore";
 import "./ProductCard.css";
-import { formatTotal } from "../utils/format";
+import { formatTotal } from "utils-library-ecommerce-app";
 import { useSnackbar } from "notistack";
 
 interface ProductCardProps {

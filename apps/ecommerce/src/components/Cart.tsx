@@ -1,7 +1,7 @@
 import React from "react";
 import useCartStore from "../stores/cartStore";
 import "./Cart.css";
-import { formatPercentage, formatTotal } from "../utils/format";
+import { formatPercentage, formatTotal } from "utils-library-ecommerce-app";
 
 const Cart: React.FC = () => {
   const { items, removeItem, updateItemQuantity } = useCartStore();

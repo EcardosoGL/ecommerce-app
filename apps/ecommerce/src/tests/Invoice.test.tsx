@@ -2,9 +2,9 @@ import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import Invoice from "../components/Invoice";
 import { Product, UserData } from "../types/types";
-import { formatTotal } from "../utils/format";
+import { formatTotal } from "utils-library-ecommerce-app";
 
-vi.mock("../utils/format", () => ({
+vi.mock("utils-library-ecommerce-app", () => ({
   formatDate: vi.fn(() => "2023-10-01"),
   formatTotal: vi.fn((amount: number) => `$${amount.toFixed(0)}`),
 }));
