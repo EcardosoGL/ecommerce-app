@@ -69,14 +69,14 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
 ## Usuarios de prueba
 ### Cliente:
 - **Usuario**:
-  ```cliente
+  cliente
 - **Clave**:
-  ```cliente123
+  cliente123
 ### Administrador:
 - **Usuario**:
-  ```admin
+  admin
 - **Clave**:
-  ```admin123
+  admin123
 
 ## Pruebas
 
